@@ -1,14 +1,14 @@
-module osm-f.AssemblyInfo
+module osmf.AssemblyInfo
 open System.Reflection
 open System.Runtime.CompilerServices
 
 
-[<assembly: AssemblyTitle("osm-f")>]
+[<assembly: AssemblyTitle("osmf")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
 [<assembly: AssemblyProduct("")>]
-[<assembly: AssemblyCopyright("dak")>]
+[<assembly: AssemblyCopyright("Davide Gessa")>]
 [<assembly: AssemblyTrademark("")>]
 
 // The assembly version has the format {Major}.{Minor}.{Build}.{Revision}

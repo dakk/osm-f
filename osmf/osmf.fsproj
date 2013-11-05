@@ -5,10 +5,22 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D06AE3B6-D8E4-477E-94BE-14976EC55B92}</ProjectGuid>
+    <ProjectGuid>{CC3E3958-EACB-46F5-9D82-794A1CDAFA2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>osmf</RootNamespace>
-    <AssemblyName>osm-f</AssemblyName>
+    <AssemblyName>osmf</AssemblyName>
+    <BuildOrder>
+      <BuildOrder>
+        <String>AssemblyInfo.fs</String>
+        <String>Component1.fs</String>
+        <String>Utility/GeoCoordinate.fs</String>
+        <String>StreetsGraph/Tag.fs</String>
+        <String>StreetsGraph/MapObject.fs</String>
+        <String>StreetsGraph/Node.fs</String>
+        <String>StreetsGraph/Relation.fs</String>
+        <String>StreetsGraph/Way.fs</String>
+      </BuildOrder>
+    </BuildOrder>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -17,7 +29,7 @@
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <PlatformTarget />
-    <ConsolePause>false</ConsolePause>
+    <ConsolePause>False</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,7 +38,7 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <PlatformTarget />
-    <ConsolePause>false</ConsolePause>
+    <ConsolePause>False</ConsolePause>
     <Tailcalls>true</Tailcalls>
   </PropertyGroup>
   <ItemGroup>
@@ -39,6 +51,16 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Component1.fs" />
+    <Compile Include="StreetsGraph\Node.fs" />
+    <Compile Include="StreetsGraph\Relation.fs" />
+    <Compile Include="StreetsGraph\Tag.fs" />
+    <Compile Include="StreetsGraph\Way.fs" />
+    <Compile Include="StreetsGraph\MapObject.fs" />
+    <Compile Include="Utility\GeoCoordinate.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <Folder Include="StreetsGraph\" />
+    <Folder Include="Utility\" />
+  </ItemGroup>
 </Project>
