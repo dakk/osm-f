@@ -1,4 +1,4 @@
-namespace StreetsGen.Utility
+namespace osmf.Utility
     open System
     
     ///<summary>GeoCoordinate</summary>

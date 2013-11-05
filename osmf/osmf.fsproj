@@ -57,6 +57,7 @@
     <Compile Include="StreetsGraph\Way.fs" />
     <Compile Include="StreetsGraph\MapObject.fs" />
     <Compile Include="Utility\GeoCoordinate.fs" />
+    <Compile Include="StreetsGraph\StreetsGraph.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

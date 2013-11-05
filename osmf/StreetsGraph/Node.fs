@@ -1,6 +1,6 @@
-namespace StreetsGen.StreetsGraph
+namespace osmf.StreetsGraph
     open System
-    open StreetsGen.Utility
+    open osmf.Utility
     
     type Node (id:int, visible:bool, ?coord:GeoCoordinate) = 
         inherit MapObject (id, visible)

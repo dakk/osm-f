@@ -1,4 +1,4 @@
-namespace StreetsGen.StreetsGraph        
+namespace osmf.StreetsGraph        
 
     type MapObject (id:int, visible:bool) = 
         member val public Id        : int = id            with get, set

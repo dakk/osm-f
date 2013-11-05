@@ -1,4 +1,4 @@
-namespace StreetsGen.StreetsGraph
+namespace osmf.StreetsGraph
 
         
     type Way (id:int, visible:bool) = 
