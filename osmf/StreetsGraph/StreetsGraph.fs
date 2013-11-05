@@ -6,17 +6,12 @@ namespace osmf.StreetsGraph
     
     ///<summary>Class that represent an OSM map</summary>
     type StreetsGraph () = 
+        // Switch to indexed arrays
         member val public Nodes     : Node list = []      with get, set
         member val public Ways      : Way list = []       with get, set
         member val public Relations : Relation list = []  with get, set
-        
-        
-        ///<summary>Load a streetsgraph from xml file</summary>
-        static member Load (path : string) =            
-            let sgraph = new StreetsGraph ()            
-            (sgraph)
+     
             
-
         ///<summary>Return the osmxml data</summary>
         override this.ToString () =
             let mutable s = "<?xml version='1.0' encoding='UTF-8'?>\n"
@@ -28,5 +23,5 @@ namespace osmf.StreetsGraph
             
             
         ///<summary>Save the streetsgraph to an xml file</summary>
-        member this.Save (path:string) = 
+        member this.SaveToXML (path:string) = 
             File.WriteAllText(path, this.ToString ())

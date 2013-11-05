@@ -19,6 +19,9 @@
         <String>StreetsGraph/Node.fs</String>
         <String>StreetsGraph/Relation.fs</String>
         <String>StreetsGraph/Way.fs</String>
+        <String>StreetsGraph/StreetsGraph.fs</String>
+        <String>Modules/IModule.fs</String>
+        <String>Modules/OsmXMLImporter/OsmXMLImporter.fs</String>
       </BuildOrder>
     </BuildOrder>
   </PropertyGroup>
@@ -47,6 +50,18 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="nunit.core, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
@@ -58,10 +73,15 @@
     <Compile Include="StreetsGraph\MapObject.fs" />
     <Compile Include="Utility\GeoCoordinate.fs" />
     <Compile Include="StreetsGraph\StreetsGraph.fs" />
+    <Compile Include="Modules\OsmXMLImporter\OsmXMLImporter.fs" />
+    <Compile Include="Modules\IModule.fs" />
+    <Compile Include="UnitTests.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
     <Folder Include="StreetsGraph\" />
     <Folder Include="Utility\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\OsmXMLImporter\" />
   </ItemGroup>
 </Project>

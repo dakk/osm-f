@@ -1,15 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="osmf/StreetsGraph/MapObject.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="osmf/Modules/OsmXMLImporter/OsmXMLImporter.fs">
     <Files>
       <File FileName="osmf/Component1.fs" Line="1" Column="1" />
-      <File FileName="osmf/AssemblyInfo.fs" Line="11" Column="44" />
-      <File FileName="osmf/StreetsGraph/Node.fs" Line="1" Column="1" />
-      <File FileName="osmf/Utility/GeoCoordinate.fs" Line="1" Column="1" />
-      <File FileName="osmf/StreetsGraph/MapObject.fs" Line="6" Column="39" />
-      <File FileName="osmf/StreetsGraph/Way.fs" Line="1" Column="1" />
-      <File FileName="osmf/StreetsGraph/Tag.fs" Line="1" Column="1" />
-      <File FileName="osmf/StreetsGraph/Relation.fs" Line="1" Column="1" />
+      <File FileName="osmf/StreetsGraph/StreetsGraph.fs" Line="1" Column="1" />
+      <File FileName="osmf/Modules/OsmXMLImporter/OsmXMLImporter.fs" Line="2" Column="22" />
+      <File FileName="osmf/Modules/IModule.fs" Line="2" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
